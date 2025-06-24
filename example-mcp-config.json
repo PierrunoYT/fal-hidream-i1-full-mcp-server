@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "fal-hidream-i1-full": {
+      "command": "node",
+      "args": ["/path/to/fal-hidream-i1-full-mcp-server/build/index.js"],
+      "env": {
+        "FAL_KEY": "your_fal_api_key_here"
+      }
+    }
+  }
+}
