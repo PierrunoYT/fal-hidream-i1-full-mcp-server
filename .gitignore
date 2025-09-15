@@ -1,27 +1,57 @@
-# Dependencies
+# Node.js Dependencies
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# Build output
+# Build Output
 dist/
-# Note: build/ is included for MCP server distribution
+build/
+*.tsbuildinfo
 
-# Environment variables
+# Environment Variables
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
 
-# IDE files
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime Data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage Reports
+coverage/
+*.lcov
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# Cache Directories
+.npm/
+.yarn/
+.pnpm/
+.eslintcache
+.parcel-cache/
+
+# IDE and Editor Files
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# OS generated files
+# OS Generated Files
 .DS_Store
 .DS_Store?
 ._*
@@ -29,31 +59,21 @@ dist/
 .Trashes
 ehthumbs.db
 Thumbs.db
+desktop.ini
 
-# Logs
-logs
-*.log
+# Temporary Files
+*.tmp
+*.temp
+.temp/
+tmp/
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Coverage directory used by tools like istanbul
-coverage/
-
-# TypeScript cache
-*.tsbuildinfo
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Generated images directory
+# Generated Images
 images/
 
-#Ignore vscode AI rules
-.github\copilot-instructions.md
+# AI/Copilot Instructions
+.github/copilot-instructions.md
+
+# Optional: Common additional patterns
+*.orig
+.vscode-test/
+.history/
